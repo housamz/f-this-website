@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+.game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.game > * {
+  border: 1px solid #0F0;
+  background-color: #0F0;
+  width: 0.25em;
+  height: 0.25em;
+}
+
+.game .score-board {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4rem;
+  color: #F00;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  border: none;
+  background-color: transparent;
+}
+
+.game .shooter {
+  background-color: #F00;
+  border-color: #F00;
+  -webkit-box-shadow: 0 0 0 0.25em #F00, 0.625em 0 0 0.25em #F00, -0.625em 0 0 0.25em #F00, 1em 0.0625em 0 0.1875em #F00, -1em 0.0625em 0 0.1875em #F00, 0 -0.25em 0 0.25em #F00, 0 -0.625em 0 0 #F00;
+          box-shadow: 0 0 0 0.25em #F00, 0.625em 0 0 0.25em #F00, -0.625em 0 0 0.25em #F00, 1em 0.0625em 0 0.1875em #F00, -1em 0.0625em 0 0.1875em #F00, 0 -0.25em 0 0.25em #F00, 0 -0.625em 0 0 #F00;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+}
+
+.game .shot {
+  height: 0.625em;
+  background-color: #F00;
+  position: absolute;
+  border: none;
+}
+
+.game .monster {
+  -webkit-animation: 1s step-end infinite;
+          animation: 1s step-end infinite;
+  position: absolute;
+}
+
+.game .monster.monster-1 {
+  -webkit-box-shadow: 0 0 0 0.25em #0F0, 0 0.25em 0 0.25em #0F0, -0.625em 0.375em 0 0.125em #0F0, 0.625em 0.375em 0 0.125em #0F0, -0.75em -0.75em 0 0 #0F0, 0.75em -0.75em 0 0 #0F0, -0.5em -0.5em 0 0 #0F0, 0.5em -0.5em 0 0 #0F0, -0.75em -0.25em 0 0 #0F0, -0.5em -0.25em 0 0 #0F0, 0.5em -0.25em 0 0 #0F0, 0.75em -0.25em 0 0 #0F0, -1em 0 0 0 #0F0, -0.75em 0 0 0 #0F0, 0.75em 0 0 0 #0F0, 1em 0 0 0 #0F0, -1em 0.25em 0 0 #0F0, 1em 0.25em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 1.25em 0.25em 0 0 #0F0, 1.25em 0.5em 0 0 #0F0, 1.25em 0.75em 0 0 #0F0, -1.25em 0.25em 0 0 #0F0, -1.25em 0.5em 0 0 #0F0, -1.25em 0.75em 0 0 #0F0, -0.25em 1em 0 0 #0F0, -0.5em 1em 0 0 #0F0, 0.25em 1em 0 0 #0F0, 0.5em 1em 0 0 #0F0;
+          box-shadow: 0 0 0 0.25em #0F0, 0 0.25em 0 0.25em #0F0, -0.625em 0.375em 0 0.125em #0F0, 0.625em 0.375em 0 0.125em #0F0, -0.75em -0.75em 0 0 #0F0, 0.75em -0.75em 0 0 #0F0, -0.5em -0.5em 0 0 #0F0, 0.5em -0.5em 0 0 #0F0, -0.75em -0.25em 0 0 #0F0, -0.5em -0.25em 0 0 #0F0, 0.5em -0.25em 0 0 #0F0, 0.75em -0.25em 0 0 #0F0, -1em 0 0 0 #0F0, -0.75em 0 0 0 #0F0, 0.75em 0 0 0 #0F0, 1em 0 0 0 #0F0, -1em 0.25em 0 0 #0F0, 1em 0.25em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 1.25em 0.25em 0 0 #0F0, 1.25em 0.5em 0 0 #0F0, 1.25em 0.75em 0 0 #0F0, -1.25em 0.25em 0 0 #0F0, -1.25em 0.5em 0 0 #0F0, -1.25em 0.75em 0 0 #0F0, -0.25em 1em 0 0 #0F0, -0.5em 1em 0 0 #0F0, 0.25em 1em 0 0 #0F0, 0.5em 1em 0 0 #0F0;
+  -webkit-animation-name: monster-1;
+          animation-name: monster-1;
+}
+
+.game .monster.monster-2 {
+  -webkit-box-shadow: -0.125em -0.5em 0 0.25em #0F0, 0.125em -0.5em 0 0.25em #0F0, -0.75em -0.375em 0 0.125em #0F0, -0.875em -0.375em 0 0.125em #0F0, 0.75em -0.375em 0 0.125em #0F0, 0.875em -0.375em 0 0.125em #0F0, -1em 0 0 0.25em #0F0, 1em 0 0 0.25em #0F0, -0.5em 0.25em 0 0 #0F0, -0.25em 0.25em 0 0 #0F0, 0 0.25em 0 0 #0F0, 0.25em 0.25em 0 0 #0F0, 0.5em 0.25em 0 0 #0F0, 0.3125em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, -0.3125em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.8125em 0.75em 0 0 #0F0, -1.0625em 1em 0 0 #0F0, -1.25em 1em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, 0.8125em 0.75em 0 0 #0F0, 1.0625em 1em 0 0 #0F0, 1.25em 1em 0 0 #0F0;
+          box-shadow: -0.125em -0.5em 0 0.25em #0F0, 0.125em -0.5em 0 0.25em #0F0, -0.75em -0.375em 0 0.125em #0F0, -0.875em -0.375em 0 0.125em #0F0, 0.75em -0.375em 0 0.125em #0F0, 0.875em -0.375em 0 0.125em #0F0, -1em 0 0 0.25em #0F0, 1em 0 0 0.25em #0F0, -0.5em 0.25em 0 0 #0F0, -0.25em 0.25em 0 0 #0F0, 0 0.25em 0 0 #0F0, 0.25em 0.25em 0 0 #0F0, 0.5em 0.25em 0 0 #0F0, 0.3125em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, -0.3125em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.8125em 0.75em 0 0 #0F0, -1.0625em 1em 0 0 #0F0, -1.25em 1em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, 0.8125em 0.75em 0 0 #0F0, 1.0625em 1em 0 0 #0F0, 1.25em 1em 0 0 #0F0;
+  -webkit-animation-name: monster-2;
+          animation-name: monster-2;
+}
+
+.game .monster.monster-3 {
+  -webkit-box-shadow: 0 -0.625em 0 0.125em #0F0, -0.25em -0.375em 0 0.125em #0F0, 0.25em -0.375em 0 0.125em #0F0, 0.625em -0.25em 0 0 #0F0, -0.625em -0.25em 0 0 #0F0, 0 0.125em 0 0.125em #0F0, -0.75em 0.125em 0 0.125em #0F0, 0.75em 0.125em 0 0.125em #0F0, 0.375em 0.25em 0 0 #0F0, -0.375em 0.25em 0 0 #0F0, 0.125em 0.5em 0 0 #0F0, -0.125em 0.5em 0 0 #0F0, -0.625em 0.5em 0 0 #0F0, -0.875em 0.75em 0 0 #0F0, -0.625em 1em 0 0 #0F0, -0.625em 1em 0 0 #0F0, 0.625em 0.5em 0 0 #0F0, 0.875em 0.75em 0 0 #0F0, 0.625em 1em 0 0 #0F0, 0.625em 1em 0 0 #0F0;
+          box-shadow: 0 -0.625em 0 0.125em #0F0, -0.25em -0.375em 0 0.125em #0F0, 0.25em -0.375em 0 0.125em #0F0, 0.625em -0.25em 0 0 #0F0, -0.625em -0.25em 0 0 #0F0, 0 0.125em 0 0.125em #0F0, -0.75em 0.125em 0 0.125em #0F0, 0.75em 0.125em 0 0.125em #0F0, 0.375em 0.25em 0 0 #0F0, -0.375em 0.25em 0 0 #0F0, 0.125em 0.5em 0 0 #0F0, -0.125em 0.5em 0 0 #0F0, -0.625em 0.5em 0 0 #0F0, -0.875em 0.75em 0 0 #0F0, -0.625em 1em 0 0 #0F0, -0.625em 1em 0 0 #0F0, 0.625em 0.5em 0 0 #0F0, 0.875em 0.75em 0 0 #0F0, 0.625em 1em 0 0 #0F0, 0.625em 1em 0 0 #0F0;
+  -webkit-animation-name: monster-3;
+          animation-name: monster-3;
+}
+
+@-webkit-keyframes monster-1 {
+  50% {
+    -webkit-box-shadow: 0 0 0 0.25em #0F0, 0 0.25em 0 0.25em #0F0, -0.625em 0.375em 0 0.125em #0F0, 0.625em 0.375em 0 0.125em #0F0, -0.75em -0.75em 0 0 #0F0, 0.75em -0.75em 0 0 #0F0, -0.5em -0.5em 0 0 #0F0, 0.5em -0.5em 0 0 #0F0, -0.75em -0.25em 0 0 #0F0, -0.5em -0.25em 0 0 #0F0, 0.5em -0.25em 0 0 #0F0, 0.75em -0.25em 0 0 #0F0, -1em 0 0 0 #0F0, -0.75em 0 0 0 #0F0, 0.75em 0 0 0 #0F0, 1em 0 0 0 #0F0, -1em 0.25em 0 0 #0F0, 1em 0.25em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 1.25em 0 0 0 #0F0, 1.25em -0.25em 0 0 #0F0, 1.25em -0.5em 0 0 #0F0, -1.25em 0 0 0 #0F0, -1.25em -0.25em 0 0 #0F0, -1.25em -0.5em 0 0 #0F0, -1em 1em 0 0 #0F0, -1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0;
+            box-shadow: 0 0 0 0.25em #0F0, 0 0.25em 0 0.25em #0F0, -0.625em 0.375em 0 0.125em #0F0, 0.625em 0.375em 0 0.125em #0F0, -0.75em -0.75em 0 0 #0F0, 0.75em -0.75em 0 0 #0F0, -0.5em -0.5em 0 0 #0F0, 0.5em -0.5em 0 0 #0F0, -0.75em -0.25em 0 0 #0F0, -0.5em -0.25em 0 0 #0F0, 0.5em -0.25em 0 0 #0F0, 0.75em -0.25em 0 0 #0F0, -1em 0 0 0 #0F0, -0.75em 0 0 0 #0F0, 0.75em 0 0 0 #0F0, 1em 0 0 0 #0F0, -1em 0.25em 0 0 #0F0, 1em 0.25em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 1.25em 0 0 0 #0F0, 1.25em -0.25em 0 0 #0F0, 1.25em -0.5em 0 0 #0F0, -1.25em 0 0 0 #0F0, -1.25em -0.25em 0 0 #0F0, -1.25em -0.5em 0 0 #0F0, -1em 1em 0 0 #0F0, -1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0;
+  }
+}
+
+@keyframes monster-1 {
+  50% {
+    -webkit-box-shadow: 0 0 0 0.25em #0F0, 0 0.25em 0 0.25em #0F0, -0.625em 0.375em 0 0.125em #0F0, 0.625em 0.375em 0 0.125em #0F0, -0.75em -0.75em 0 0 #0F0, 0.75em -0.75em 0 0 #0F0, -0.5em -0.5em 0 0 #0F0, 0.5em -0.5em 0 0 #0F0, -0.75em -0.25em 0 0 #0F0, -0.5em -0.25em 0 0 #0F0, 0.5em -0.25em 0 0 #0F0, 0.75em -0.25em 0 0 #0F0, -1em 0 0 0 #0F0, -0.75em 0 0 0 #0F0, 0.75em 0 0 0 #0F0, 1em 0 0 0 #0F0, -1em 0.25em 0 0 #0F0, 1em 0.25em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 1.25em 0 0 0 #0F0, 1.25em -0.25em 0 0 #0F0, 1.25em -0.5em 0 0 #0F0, -1.25em 0 0 0 #0F0, -1.25em -0.25em 0 0 #0F0, -1.25em -0.5em 0 0 #0F0, -1em 1em 0 0 #0F0, -1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0;
+            box-shadow: 0 0 0 0.25em #0F0, 0 0.25em 0 0.25em #0F0, -0.625em 0.375em 0 0.125em #0F0, 0.625em 0.375em 0 0.125em #0F0, -0.75em -0.75em 0 0 #0F0, 0.75em -0.75em 0 0 #0F0, -0.5em -0.5em 0 0 #0F0, 0.5em -0.5em 0 0 #0F0, -0.75em -0.25em 0 0 #0F0, -0.5em -0.25em 0 0 #0F0, 0.5em -0.25em 0 0 #0F0, 0.75em -0.25em 0 0 #0F0, -1em 0 0 0 #0F0, -0.75em 0 0 0 #0F0, 0.75em 0 0 0 #0F0, 1em 0 0 0 #0F0, -1em 0.25em 0 0 #0F0, 1em 0.25em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 1.25em 0 0 0 #0F0, 1.25em -0.25em 0 0 #0F0, 1.25em -0.5em 0 0 #0F0, -1.25em 0 0 0 #0F0, -1.25em -0.25em 0 0 #0F0, -1.25em -0.5em 0 0 #0F0, -1em 1em 0 0 #0F0, -1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0, 1em 1em 0 0 #0F0;
+  }
+}
+
+@-webkit-keyframes monster-2 {
+  50% {
+    -webkit-box-shadow: -0.125em -0.5em 0 0.25em #0F0, 0.125em -0.5em 0 0.25em #0F0, -0.75em -0.375em 0 0.125em #0F0, -0.875em -0.375em 0 0.125em #0F0, 0.75em -0.375em 0 0.125em #0F0, 0.875em -0.375em 0 0.125em #0F0, -1em 0 0 0.25em #0F0, 1em 0 0 0.25em #0F0, -0.5em 0.25em 0 0 #0F0, -0.25em 0.25em 0 0 #0F0, 0 0.25em 0 0 #0F0, 0.25em 0.25em 0 0 #0F0, 0.5em 0.25em 0 0 #0F0, 0.3125em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, 0.625em 0.5em 0 0 #0F0, -0.3125em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, -0.625em 0.5em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, -0.9375em 0.75em 0 0 #0F0, -0.75em 1em 0 0 #0F0, -0.5em 1em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 0.9375em 0.75em 0 0 #0F0, 0.75em 1em 0 0 #0F0, 0.5em 1em 0 0 #0F0;
+            box-shadow: -0.125em -0.5em 0 0.25em #0F0, 0.125em -0.5em 0 0.25em #0F0, -0.75em -0.375em 0 0.125em #0F0, -0.875em -0.375em 0 0.125em #0F0, 0.75em -0.375em 0 0.125em #0F0, 0.875em -0.375em 0 0.125em #0F0, -1em 0 0 0.25em #0F0, 1em 0 0 0.25em #0F0, -0.5em 0.25em 0 0 #0F0, -0.25em 0.25em 0 0 #0F0, 0 0.25em 0 0 #0F0, 0.25em 0.25em 0 0 #0F0, 0.5em 0.25em 0 0 #0F0, 0.3125em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, 0.625em 0.5em 0 0 #0F0, -0.3125em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, -0.625em 0.5em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, -0.9375em 0.75em 0 0 #0F0, -0.75em 1em 0 0 #0F0, -0.5em 1em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 0.9375em 0.75em 0 0 #0F0, 0.75em 1em 0 0 #0F0, 0.5em 1em 0 0 #0F0;
+  }
+}
+
+@keyframes monster-2 {
+  50% {
+    -webkit-box-shadow: -0.125em -0.5em 0 0.25em #0F0, 0.125em -0.5em 0 0.25em #0F0, -0.75em -0.375em 0 0.125em #0F0, -0.875em -0.375em 0 0.125em #0F0, 0.75em -0.375em 0 0.125em #0F0, 0.875em -0.375em 0 0.125em #0F0, -1em 0 0 0.25em #0F0, 1em 0 0 0.25em #0F0, -0.5em 0.25em 0 0 #0F0, -0.25em 0.25em 0 0 #0F0, 0 0.25em 0 0 #0F0, 0.25em 0.25em 0 0 #0F0, 0.5em 0.25em 0 0 #0F0, 0.3125em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, 0.625em 0.5em 0 0 #0F0, -0.3125em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, -0.625em 0.5em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, -0.9375em 0.75em 0 0 #0F0, -0.75em 1em 0 0 #0F0, -0.5em 1em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 0.9375em 0.75em 0 0 #0F0, 0.75em 1em 0 0 #0F0, 0.5em 1em 0 0 #0F0;
+            box-shadow: -0.125em -0.5em 0 0.25em #0F0, 0.125em -0.5em 0 0.25em #0F0, -0.75em -0.375em 0 0.125em #0F0, -0.875em -0.375em 0 0.125em #0F0, 0.75em -0.375em 0 0.125em #0F0, 0.875em -0.375em 0 0.125em #0F0, -1em 0 0 0.25em #0F0, 1em 0 0 0.25em #0F0, -0.5em 0.25em 0 0 #0F0, -0.25em 0.25em 0 0 #0F0, 0 0.25em 0 0 #0F0, 0.25em 0.25em 0 0 #0F0, 0.5em 0.25em 0 0 #0F0, 0.3125em 0.5em 0 0 #0F0, 0.5em 0.5em 0 0 #0F0, 0.625em 0.5em 0 0 #0F0, -0.3125em 0.5em 0 0 #0F0, -0.5em 0.5em 0 0 #0F0, -0.625em 0.5em 0 0 #0F0, 0.0625em 0.75em 0 0 #0F0, -0.0625em 0.75em 0 0 #0F0, -0.75em 0.75em 0 0 #0F0, -0.9375em 0.75em 0 0 #0F0, -0.75em 1em 0 0 #0F0, -0.5em 1em 0 0 #0F0, 0.75em 0.75em 0 0 #0F0, 0.9375em 0.75em 0 0 #0F0, 0.75em 1em 0 0 #0F0, 0.5em 1em 0 0 #0F0;
+  }
+}
+
+@-webkit-keyframes monster-3 {
+  50% {
+    -webkit-box-shadow: 0 -0.625em 0 0.125em #0F0, -0.25em -0.375em 0 0.125em #0F0, 0.25em -0.375em 0 0.125em #0F0, 0.625em -0.25em 0 0 #0F0, -0.625em -0.25em 0 0 #0F0, 0 0.125em 0 0.125em #0F0, -0.75em 0.125em 0 0.125em #0F0, 0.75em 0.125em 0 0.125em #0F0, 0.375em 0.25em 0 0 #0F0, -0.375em 0.25em 0 0 #0F0, 0.125em 0.5em 0 0 #0F0, -0.125em 0.5em 0 0 #0F0, -0.375em 0.5em 0 0 #0F0, -0.625em 0.75em 0 0 #0F0, -0.875em 1em 0 0 #0F0, -0.375em 1em 0 0 #0F0, 0.375em 0.5em 0 0 #0F0, 0.625em 0.75em 0 0 #0F0, 0.875em 1em 0 0 #0F0, 0.375em 1em 0 0 #0F0;
+            box-shadow: 0 -0.625em 0 0.125em #0F0, -0.25em -0.375em 0 0.125em #0F0, 0.25em -0.375em 0 0.125em #0F0, 0.625em -0.25em 0 0 #0F0, -0.625em -0.25em 0 0 #0F0, 0 0.125em 0 0.125em #0F0, -0.75em 0.125em 0 0.125em #0F0, 0.75em 0.125em 0 0.125em #0F0, 0.375em 0.25em 0 0 #0F0, -0.375em 0.25em 0 0 #0F0, 0.125em 0.5em 0 0 #0F0, -0.125em 0.5em 0 0 #0F0, -0.375em 0.5em 0 0 #0F0, -0.625em 0.75em 0 0 #0F0, -0.875em 1em 0 0 #0F0, -0.375em 1em 0 0 #0F0, 0.375em 0.5em 0 0 #0F0, 0.625em 0.75em 0 0 #0F0, 0.875em 1em 0 0 #0F0, 0.375em 1em 0 0 #0F0;
+  }
+}
+
+@keyframes monster-3 {
+  50% {
+    -webkit-box-shadow: 0 -0.625em 0 0.125em #0F0, -0.25em -0.375em 0 0.125em #0F0, 0.25em -0.375em 0 0.125em #0F0, 0.625em -0.25em 0 0 #0F0, -0.625em -0.25em 0 0 #0F0, 0 0.125em 0 0.125em #0F0, -0.75em 0.125em 0 0.125em #0F0, 0.75em 0.125em 0 0.125em #0F0, 0.375em 0.25em 0 0 #0F0, -0.375em 0.25em 0 0 #0F0, 0.125em 0.5em 0 0 #0F0, -0.125em 0.5em 0 0 #0F0, -0.375em 0.5em 0 0 #0F0, -0.625em 0.75em 0 0 #0F0, -0.875em 1em 0 0 #0F0, -0.375em 1em 0 0 #0F0, 0.375em 0.5em 0 0 #0F0, 0.625em 0.75em 0 0 #0F0, 0.875em 1em 0 0 #0F0, 0.375em 1em 0 0 #0F0;
+            box-shadow: 0 -0.625em 0 0.125em #0F0, -0.25em -0.375em 0 0.125em #0F0, 0.25em -0.375em 0 0.125em #0F0, 0.625em -0.25em 0 0 #0F0, -0.625em -0.25em 0 0 #0F0, 0 0.125em 0 0.125em #0F0, -0.75em 0.125em 0 0.125em #0F0, 0.75em 0.125em 0 0.125em #0F0, 0.375em 0.25em 0 0 #0F0, -0.375em 0.25em 0 0 #0F0, 0.125em 0.5em 0 0 #0F0, -0.125em 0.5em 0 0 #0F0, -0.375em 0.5em 0 0 #0F0, -0.625em 0.75em 0 0 #0F0, -0.875em 1em 0 0 #0F0, -0.375em 1em 0 0 #0F0, 0.375em 0.5em 0 0 #0F0, 0.625em 0.75em 0 0 #0F0, 0.875em 1em 0 0 #0F0, 0.375em 1em 0 0 #0F0;
+  }
+}
