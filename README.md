@@ -1,7 +1,7 @@
 
 # F This Website
 An ~4KB game for your website.
-![screenshot](images/screenshot.png)
+![screenshot](images/screenshot.gif)
 These space invaders are coming to F your website.
 Every word they pass over will turn into a word of your choice until you shoot them.
 
